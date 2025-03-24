@@ -17,5 +17,6 @@ void handle_finalize(ethPluginFinalize_t *msg) {
     // token addresses you will info for (such as decimals, ticker...).
     msg->tokenLookup1 = context->token_received;
 
+    // TODO: Remove this comment
     msg->result = ETH_PLUGIN_RESULT_OK;
 }
