@@ -27,6 +27,8 @@ static bool set_receive_ui(ethQueryContractUI_t *msg, const context_t *context) 
     strlcpy(msg->title, "Receive Min.", msg->titleLength);
 
     uint8_t decimals = context->decimals;
+    uint8_t temp;
+    temp = decimals;
     const char *ticker = context->ticker;
 
     // If the token look up failed, use the default network ticker along with the default decimals.
